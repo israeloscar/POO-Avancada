@@ -1,7 +1,7 @@
 # ☕ Estudos de Java — POO Avançada e Coleções
 
 Repositório com os exercícios de POO avançada do meu aprendizado de Java.  
-Iniciado em maio/2026 para conseguir o meu primeiro emprego como desenvolvedor. 🚀
+Iniciado em maio/2026 com o objetivo de conseguir meu primeiro emprego como desenvolvedor. 🚀
 
 ---
 
@@ -25,7 +25,7 @@ POO-Avancada/
 | `Animal.java` | Classe mãe com atributos e método genérico | herança, classe base |
 | `Cachorro.java` | Classe filha que herda de Animal | `extends`, `super`, `@Override` |
 | `Gato.java` | Classe filha que herda de Animal | `extends`, `super`, `@Override` |
-| `Main.java` | Cria objetos e demonstra polimorfismo | instanciação, polimorfismo |
+| `Main.java` | Demonstra herança e polimorfismo com array de animais | polimorfismo, array de objetos, `for-each` |
 
 ---
 
