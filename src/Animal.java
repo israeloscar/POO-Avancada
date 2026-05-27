@@ -5,13 +5,13 @@ public class Animal {
     String nome;
     int idade;
 
-    // Construtor — inicializa o animal com nome e idade
+    // Construtor, inicializa o animal com nome e idade
     Animal(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
 
-    // Método que retorna o som do animal — será sobrescrito pelas classes filhas
+    // Método que retorna o som do animal. Será sobrescrito pelas classes filhas
     String emitirSom() {
         return "Som genérico de animal!";
     }

@@ -9,9 +9,9 @@ public class Main {
         System.out.println(cadela.nome + ": " + cadela.emitirSom());
         System.out.println(gato.nome + ": " + gato.emitirSom());
 
-        // ---------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------
 
-        // Array de animais, demonstra polimorfismo
+        // Array de animais — demonstra polimorfismo
         // cada objeto responde ao emitirSom() do seu jeito
         Animal[] animais = {cadela, gato, new Cachorro("Bob", 6)};
 
@@ -19,5 +19,16 @@ public class Main {
         for (Animal animal : animais) {
             System.out.println(animal.nome + ": " + animal.emitirSom());
         }
+
+        // ---------------------------------------------------------------------------------------------------------
+
+        // Testando classes abstratas — AnimalAbstrato não pode ser instanciado diretamente
+        // apenas a suas classes filhas podem ser criadas
+        CachorroAbstrato cachorroAbs = new CachorroAbstrato("Rex", 5);
+        GatoAbstrato gataAbs = new GatoAbstrato("Luna", 3);
+
+        // cada filha implementa o emitirSomAbstrato() do seu jeito
+        System.out.println(cachorroAbs.nome + ": " + cachorroAbs.emitirSomAbstrato());
+        System.out.println(gataAbs.nome + ": " + gataAbs.emitirSomAbstrato());
     }
 }
