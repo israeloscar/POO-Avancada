@@ -11,7 +11,7 @@ public class Main {
 
         // ---------------------------------------------------------------------------------------------------------
 
-        // Array de animais — demonstra polimorfismo
+        // Array de animais. Demonstra polimorfismo
         // cada objeto responde ao emitirSom() do seu jeito
         Animal[] animais = {cadela, gato, new Cachorro("Bob", 6)};
 
@@ -22,13 +22,26 @@ public class Main {
 
         // ---------------------------------------------------------------------------------------------------------
 
-        // Testando classes abstratas — AnimalAbstrato não pode ser instanciado diretamente
-        // apenas a suas classes filhas podem ser criadas
+        // Testando classes abstratas. AnimalAbstrato não pode ser instanciado diretamente
+        // apenas as suas classes filhas podem ser criadas
         CachorroAbstrato cachorroAbs = new CachorroAbstrato("Rex", 5);
         GatoAbstrato gataAbs = new GatoAbstrato("Luna", 3);
 
         // cada filha implementa o emitirSomAbstrato() do seu jeito
         System.out.println(cachorroAbs.nome + ": " + cachorroAbs.emitirSomAbstrato());
         System.out.println(gataAbs.nome + ": " + gataAbs.emitirSomAbstrato());
+
+        // ---------------------------------------------------------------------------------------------------------
+
+        // Testando interfaces. Cachorro implementa Nadador e Corredor, gato só Corredor
+        CachorroHabilidades cachorroInteligente = new CachorroHabilidades("Totó", 12);
+        GatoHabilidades gatoInteligente = new GatoHabilidades("Belo", 5);
+
+        // cachorro pode nadar e correr. Duas interfaces!
+        System.out.println(cachorroInteligente.nome + ": " + cachorroInteligente.nadar());
+        System.out.println(cachorroInteligente.nome + ": " + cachorroInteligente.correr());
+
+        // gato só pode correr. Uma interface!
+        System.out.println(gatoInteligente.nome + ": " + gatoInteligente.correr());
     }
 }
