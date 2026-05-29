@@ -16,6 +16,10 @@ POO-Avancada/
     ├── AnimalAbstrato.java
     ├── CachorroAbstrato.java
     ├── GatoAbstrato.java
+    ├── Nadador.java
+    ├── Corredor.java
+    ├── CachorroHabilidades.java
+    ├── GatoHabilidades.java
     └── Main.java
 ```
 
@@ -31,7 +35,11 @@ POO-Avancada/
 | `AnimalAbstrato.java` | Classe abstrata com método abstrato | `abstract`, classe abstrata |
 | `CachorroAbstrato.java` | Classe filha que herda de AnimalAbstrato | `extends`, `@Override`, método abstrato |
 | `GatoAbstrato.java` | Classe filha que herda de AnimalAbstrato | `extends`, `@Override`, método abstrato |
-| `Main.java` | Demonstra herança, polimorfismo e classes abstratas | polimorfismo, array de objetos, `for-each` |
+| `Nadador.java` | Interface que define o contrato de nadar | `interface`, contrato |
+| `Corredor.java` | Interface que define o contrato de correr | `interface`, contrato |
+| `CachorroHabilidades.java` | Classe que implementa Nadador e Corredor | `implements`, múltiplas interfaces |
+| `GatoHabilidades.java` | Classe que implementa apenas Corredor | `implements`, interface única |
+| `Main.java` | Demonstra herança, polimorfismo, classes abstratas e interfaces | polimorfismo, array de objetos, `for-each` |
 
 ---
 
